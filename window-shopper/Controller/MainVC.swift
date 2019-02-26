@@ -10,6 +10,8 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    @IBOutlet weak var timmar: UILabel!
+    @IBOutlet weak var totalAmount: UILabel!
     @IBOutlet weak var wageTxt: CurrencyTxtField!
     @IBOutlet weak var priceTxt: CurrencyTxtField!
     
@@ -24,14 +26,29 @@ class MainVC: UIViewController {
         calcBtn.addTarget(self, action: #selector(MainVC.calculate), for: .touchUpInside)
         wageTxt.inputAccessoryView = calcBtn
         priceTxt.inputAccessoryView = calcBtn
+        totalAmount.isHidden = true
+        timmar.isHidden = true
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     @objc func calculate(){
-        
+        if let wageTxt = wageTxt.text, let priceTxt = priceTxt.text{
+            if let wage = Double(wageTxt), let price = Double(priceTxt){
+                view.endEditing(true)
+                totalAmount.isHidden = false
+                timmar.isHidden = false
+                totalAmount.text = "\(Wage.getHours(forWage: wage, andPrice: price))"
+            }
+        }
         
     }
 
-
+    @IBAction func rensaBtn(_ sender: Any) {
+        totalAmount.isHidden = true
+        timmar.isHidden = true
+        wageTxt.text = ""
+        priceTxt.text = ""
+    }
+    
 }
 

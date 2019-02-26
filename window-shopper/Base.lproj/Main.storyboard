@@ -46,35 +46,74 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMk-wT-DIQ">
+                                <rect key="frame" x="35" y="389" width="344" height="72"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="52"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="timmar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4y-wq-HOG">
+                                <rect key="frame" x="156" y="469" width="102" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="7Lw-Bh-txq"/>
+                                    <constraint firstAttribute="width" constant="102" id="JGR-ju-vWg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBw-Wy-J8p">
+                                <rect key="frame" x="20" y="672" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="0LO-A0-Mbs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                <state key="normal" title="Rensa kalkylatorn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="rensaBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8o2-ou-ybS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dPC-Vd-PrK" secondAttribute="trailing" constant="35" id="7g0-hQ-Tjy"/>
                             <constraint firstItem="dPC-Vd-PrK" firstAttribute="leading" secondItem="EJz-R3-O9P" secondAttribute="leading" id="8A3-Aa-NWS"/>
                             <constraint firstItem="pbd-Ho-Wn3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="C9Y-Xl-xap"/>
+                            <constraint firstItem="I4y-wq-HOG" firstAttribute="top" secondItem="uMk-wT-DIQ" secondAttribute="bottom" constant="8" id="EWw-Kb-i3m"/>
                             <constraint firstItem="dPC-Vd-PrK" firstAttribute="trailing" secondItem="EJz-R3-O9P" secondAttribute="trailing" id="HQq-ML-dZh"/>
                             <constraint firstItem="EJz-R3-O9P" firstAttribute="top" secondItem="1gG-IZ-QgQ" secondAttribute="bottom" constant="57" id="JoH-yd-zRh"/>
                             <constraint firstItem="pbd-Ho-Wn3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NOn-uy-AOr"/>
                             <constraint firstItem="pbd-Ho-Wn3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SfF-GV-scG"/>
+                            <constraint firstItem="uMk-wT-DIQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WB2-9V-sDj"/>
+                            <constraint firstItem="FBw-Wy-J8p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Yf8-9L-IvM"/>
+                            <constraint firstItem="I4y-wq-HOG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g8G-MF-cyT"/>
                             <constraint firstItem="1gG-IZ-QgQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="hWj-T7-j3J"/>
+                            <constraint firstItem="uMk-wT-DIQ" firstAttribute="width" secondItem="dPC-Vd-PrK" secondAttribute="width" id="jXo-GD-Dt1"/>
                             <constraint firstItem="1gG-IZ-QgQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ks4-wf-9Kj"/>
                             <constraint firstItem="pbd-Ho-Wn3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nQN-u9-Ljg"/>
                             <constraint firstItem="EJz-R3-O9P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="pr6-E2-cYu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FBw-Wy-J8p" secondAttribute="bottom" constant="20" id="r6h-Uc-PXL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FBw-Wy-J8p" secondAttribute="trailing" constant="20" id="raM-eQ-CA6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EJz-R3-O9P" secondAttribute="trailing" constant="35" id="rlb-iW-Gqc"/>
                             <constraint firstItem="dPC-Vd-PrK" firstAttribute="height" secondItem="EJz-R3-O9P" secondAttribute="height" id="wPV-7K-tf7"/>
                             <constraint firstItem="dPC-Vd-PrK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="x7e-e8-rit"/>
+                            <constraint firstItem="uMk-wT-DIQ" firstAttribute="top" secondItem="dPC-Vd-PrK" secondAttribute="bottom" constant="45" id="z76-19-7ga"/>
                             <constraint firstItem="dPC-Vd-PrK" firstAttribute="top" secondItem="EJz-R3-O9P" secondAttribute="bottom" constant="30" id="zZJ-pL-7gc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="priceTxt" destination="dPC-Vd-PrK" id="qPa-zQ-woQ"/>
+                        <outlet property="timmar" destination="I4y-wq-HOG" id="qDL-VM-rAM"/>
+                        <outlet property="totalAmount" destination="uMk-wT-DIQ" id="Ade-19-8mV"/>
                         <outlet property="wageTxt" destination="EJz-R3-O9P" id="4Kc-2L-Kja"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40.799999999999997" y="26.53673163418291"/>
+            <point key="canvasLocation" x="40.579710144927539" y="26.086956521739133"/>
         </scene>
     </scenes>
     <resources>
